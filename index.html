@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Student Details</title>
+   <link rel="stylesheet" type="text/css" href="./index.css">
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+</head>
+<body>
+    <header>
+        <button onclick="connectMetamask()"> Connect Wallet </button>
+        <p id="accountarea"></p>
+    </header>
+    <main>
+        <button onclick="connectToContract()"> Connect to Contract </button>
+        <p id="contractarea"></p>
+        <div>
+            <form id="createDetail">
+                <label for="inputName"> Enter Name</label>
+                <input type="text" id="inputName" name="inputName" required>
+                <br>
+                <label for="inputAge"> Enter Age</label>
+                <input type="text" id="inputAge" name="inputAge" required>
+                <br>
+                <label for="inputGender"> Enter Gender</label>
+                <input type="text" id="inputGender" name="inputGender" required>
+                <br>
+                <input type="submit" value="createDetail">
+            </form>
+        </div>
+        <div>
+            <button onclick="getId()"> Get ID</button>
+            <p id="dataId"></p>
+        </div>
+    </main>
+    <script src="index.js" defer></script>
+</body>
+</html>
